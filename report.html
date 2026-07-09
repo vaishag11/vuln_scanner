@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vulnerability Scan Report</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3; padding: 30px; }
+    h1 { color: #4dff88; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #30363d; padding: 10px; text-align: left; }
+    th { background: #161b22; }
+    .meta { color: #8b949e; }
+</style>
+</head>
+<body>
+    <h1>Vulnerability Scan Report</h1>
+    <p class="meta">Target: 127.0.0.1 | Generated: 2026-07-09 21:46:53</p>
+    <p class="meta">Total findings: 2</p>
+    <table>
+        <tr><th>Port</th><th>Service</th><th>Issue</th><th>Severity</th></tr>
+        
+        <tr>
+            <td>135</td>
+            <td>MSRPC</td>
+            <td>Windows RPC exposed, common attack surface</td>
+            <td style="color:#ffb84d; font-weight:bold;">Medium</td>
+        </tr>
+        <tr>
+            <td>445</td>
+            <td>SMB</td>
+            <td>SMB exposed, common ransomware/exploit vector</td>
+            <td style="color:#ff4d4d; font-weight:bold;">High</td>
+        </tr>
+    </table>
+</body>
+</html>

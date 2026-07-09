@@ -1,0 +1,19 @@
+{
+  "target": "127.0.0.1",
+  "generated": "2026-07-09T21:46:53.876724",
+  "total_findings": 2,
+  "findings": [
+    {
+      "port": 135,
+      "service": "MSRPC",
+      "issue": "Windows RPC exposed, common attack surface",
+      "severity": "Medium"
+    },
+    {
+      "port": 445,
+      "service": "SMB",
+      "issue": "SMB exposed, common ransomware/exploit vector",
+      "severity": "High"
+    }
+  ]
+}
